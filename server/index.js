@@ -13,7 +13,11 @@ app.get("/", (req, res) => {
   res.send({ hi: "there" });
 });
 
-app.listen(5000); // listen on port 5000
+const PORT = process.env.PORT || 5000;
+// whenever heroku runs, it can inject environment variables
+// heroku's opp to inject in stuff after we've deployed...
+
+app.listen(PORT); // tells node to listen on port 5000
 
 // node index.js inside cd server
 
