@@ -16,3 +16,16 @@ app.get("/", (req, res) => {
 app.listen(5000); // listen on port 5000
 
 // node index.js inside cd server
+
+// app: Express App to register this route handler with
+
+// get: Watch for incoming requests with this method
+
+// '/': watch for requests trying to access '/'
+
+// req: Object representing the incoming request
+// has bunch of data associated with the incoming request
+
+// res: what we're vomiting back
+
+// res.send: immediately close the request and send them back something
